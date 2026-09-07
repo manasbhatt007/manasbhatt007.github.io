@@ -136,12 +136,17 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:cen
 .tl-item{position:relative;padding-bottom:2.4rem}
 .tl-dot{position:absolute;left:-2rem;top:.45rem;width:11px;height:11px;border-radius:50%;background:var(--g);box-shadow:0 0 0 3px rgba(0,255,136,.15),0 0 12px rgba(0,255,136,.4);transform:translateX(-5px)}
 .tl-dot.b{background:var(--g2);box-shadow:0 0 0 3px rgba(0,204,255,.15),0 0 12px rgba(0,204,255,.4)}
+.tl-dot.r{background:var(--red);box-shadow:0 0 0 3px rgba(255,51,102,.15),0 0 12px rgba(255,51,102,.4)}
 .tl-date{font-family:var(--mono);font-size:.7rem;color:var(--g);margin-bottom:.28rem;letter-spacing:.06em}
+.tl-head-row{display:flex;align-items:center;gap:.85rem;flex-wrap:wrap}
+.tl-logo{width:42px;height:42px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:1.15rem;background:rgba(255,51,102,.08);border:1.5px solid rgba(255,51,102,.35);box-shadow:0 0 14px rgba(255,51,102,.18)}
 .tl-role{font-family:var(--orb);font-size:.98rem;font-weight:600;margin-bottom:.2rem;letter-spacing:.02em}
 .tl-org{font-family:var(--mono);font-size:.78rem;color:var(--muted);margin-bottom:.7rem;letter-spacing:.03em}
 .tl-desc{font-size:.83rem;color:var(--muted);line-height:1.9;padding-left:1.1rem}
 .tl-desc li{margin-bottom:.22rem}
 .tl-desc li::marker{color:var(--g)}
+.tl-skillrow{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.85rem}
+.tl-skill{font-family:var(--mono);font-size:.6rem;padding:.18rem .55rem;border-radius:2px;letter-spacing:.03em;background:rgba(255,51,102,.05);color:var(--red);border:1px solid rgba(255,51,102,.15)}
 .certs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:1.15rem}
 .cert-card{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:1.2rem;display:flex;gap:.85rem;align-items:flex-start;transition:all .2s}
 .cert-card:hover{border-color:rgba(0,255,136,.25);transform:translateY(-3px)}
@@ -384,6 +389,28 @@ footer span{color:var(--g)}
   <p class="section-label">05 — EXPERIENCE &amp; EDUCATION</p>
   <h2 class="section-title">My <span class="accent">Journey</span></h2>
   <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot r"></div>
+      <div class="tl-date">06/2026 – Present · 4 mos</div>
+      <div class="tl-head-row">
+        <div class="tl-logo" title="IFSO · Delhi Police">👮‍♂️</div>
+        <div>
+          <div class="tl-role">Cybersecurity &amp; Digital Forensics Intern — IFSO/NCFL</div>
+          <div class="tl-org">Delhi Police – IFSO (Intelligence Fusion and Strategic Operations) · Internship · North District, New Delhi, Delhi, India · On-site</div>
+        </div>
+      </div>
+      <ul class="tl-desc">
+        <li>Observing and assisting in cybercrime case handling — financial fraud, phishing, social engineering, and identity theft cases</li>
+        <li>Exposure to digital forensics workflows: device imaging, hash value verification, and deleted data recovery from mobile phones and storage devices</li>
+        <li>Learning chain-of-custody protocols and digital evidence documentation as per law enforcement standards</li>
+        <li>Understanding cybercrime investigation procedures under IT Act 2000, BNS &amp; BNSS frameworks</li>
+        <li>OSINT-based suspect research and open-source intelligence gathering techniques</li>
+        <li>Gaining firsthand exposure to how real cybercrime complaints are registered, triaged, and investigated at the district level</li>
+      </ul>
+      <div class="tl-skillrow">
+        <span class="tl-skill">Digital Forensics</span><span class="tl-skill">OSINT</span><span class="tl-skill">Cybercrime Investigation</span><span class="tl-skill">Evidence Handling</span><span class="tl-skill">IT Act 2000</span><span class="tl-skill">Cyber Law</span><span class="tl-skill">Network Analysis</span><span class="tl-skill">Cyber Security Risk</span><span class="tl-skill">Internet Security</span>
+      </div>
+    </div>
     <div class="tl-item">
       <div class="tl-dot"></div>
       <div class="tl-date">04/2024 – 05/2025</div>
