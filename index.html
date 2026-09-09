@@ -147,6 +147,16 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:cen
 .tl-desc li::marker{color:var(--g)}
 .tl-skillrow{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.85rem}
 .tl-skill{font-family:var(--mono);font-size:.6rem;padding:.18rem .55rem;border-radius:2px;letter-spacing:.03em;background:rgba(255,51,102,.05);color:var(--red);border:1px solid rgba(255,51,102,.15)}
+.tl-subgroup{margin:.4rem 0 2.2rem 1.6rem;padding-left:1.4rem;border-left:1px dashed rgba(123,47,255,.25)}
+.tl-subgroup-label{font-family:var(--mono);font-size:.66rem;color:var(--g3);letter-spacing:.14em;text-transform:uppercase;margin-bottom:1.1rem;display:flex;align-items:center;gap:.5rem}
+.tl-subgroup-label::before{content:'◆';font-size:.55rem}
+.tl-item.sub{padding-bottom:1.7rem}
+.tl-item.sub .tl-dot{width:8px;height:8px;left:-1.88rem;background:var(--g3);box-shadow:0 0 0 3px rgba(123,47,255,.15),0 0 10px rgba(123,47,255,.4)}
+.tl-item.sub .tl-logo{width:34px;height:34px;font-size:.95rem;background:rgba(123,47,255,.08);border-color:rgba(123,47,255,.35);box-shadow:0 0 12px rgba(123,47,255,.18)}
+.tl-item.sub .tl-role{font-size:.87rem}
+.tl-item.sub .tl-org{font-size:.72rem}
+.tl-item.sub .tl-desc-p{font-size:.8rem;color:var(--muted);line-height:1.8;margin-top:.35rem}
+.tl-item.sub .tl-skill{background:rgba(123,47,255,.05);color:var(--g3);border-color:rgba(123,47,255,.15)}
 .certs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:1.15rem}
 .cert-card{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:1.2rem;display:flex;gap:.85rem;align-items:flex-start;transition:all .2s}
 .cert-card:hover{border-color:rgba(0,255,136,.25);transform:translateY(-3px)}
@@ -436,6 +446,59 @@ footer span{color:var(--g)}
         <li>Gained hands-on experience with industry-standard cybersecurity tools and methodologies</li>
       </ul>
     </div>
+
+    <div class="tl-subgroup">
+      <div class="tl-subgroup-label">Virtual Experience</div>
+
+      <div class="tl-item sub">
+        <div class="tl-dot"></div>
+        <div class="tl-date">September 2026</div>
+        <div class="tl-head-row">
+          <div class="tl-logo" title="Deloitte">💼</div>
+          <div>
+            <div class="tl-role">Deloitte — Cyber Job Simulation</div>
+            <div class="tl-org">Forage</div>
+          </div>
+        </div>
+        <p class="tl-desc-p">Practical cybersecurity simulation focused on investigating suspicious activity, analyzing security logs, and identifying potential threats in a realistic incident scenario.</p>
+        <div class="tl-skillrow">
+          <span class="tl-skill">Cybersecurity</span><span class="tl-skill">Log Analysis</span><span class="tl-skill">Security Investigation</span><span class="tl-skill">Threat Analysis</span>
+        </div>
+      </div>
+
+      <div class="tl-item sub">
+        <div class="tl-dot"></div>
+        <div class="tl-date">September 2026</div>
+        <div class="tl-head-row">
+          <div class="tl-logo" title="PwC">💼</div>
+          <div>
+            <div class="tl-role">PwC — Cyber Security Consulting Simulation</div>
+            <div class="tl-org">Forage</div>
+          </div>
+        </div>
+        <p class="tl-desc-p">Practical cybersecurity consulting simulation covering risk assessment, SDLC walkthroughs, IT General Controls testing, control evaluation, and client-style reporting.</p>
+        <div class="tl-skillrow">
+          <span class="tl-skill">Cybersecurity</span><span class="tl-skill">Risk Assessment</span><span class="tl-skill">ITGC</span><span class="tl-skill">IT Audit</span><span class="tl-skill">Controls Testing</span>
+        </div>
+      </div>
+
+      <div class="tl-item sub">
+        <div class="tl-dot"></div>
+        <div class="tl-date">September 2026</div>
+        <div class="tl-head-row">
+          <div class="tl-logo" title="KPMG">💼</div>
+          <div>
+            <div class="tl-role">KPMG Career Catalyst: Advisory</div>
+            <div class="tl-org">Forage</div>
+          </div>
+        </div>
+        <p class="tl-desc-p">Advisory simulation focused on analyzing healthcare data, researching leading practices, identifying operational challenges, and developing data-driven improvement initiatives.</p>
+        <div class="tl-skillrow">
+          <span class="tl-skill">Data Analysis</span><span class="tl-skill">Consulting</span><span class="tl-skill">Business Analysis</span><span class="tl-skill">Research</span><span class="tl-skill">Problem Solving</span>
+        </div>
+      </div>
+    </div>
+
     <div class="tl-item">
       <div class="tl-dot b"></div>
       <div class="tl-date">2022 – 2026</div>
